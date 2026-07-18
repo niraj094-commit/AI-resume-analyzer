@@ -1,0 +1,19 @@
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e0e2e8;
+  border-top-color: #4f7cff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+.spinnerLight {
+  border: 3px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

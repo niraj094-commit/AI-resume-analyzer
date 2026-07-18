@@ -1,0 +1,42 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #555;
+}
+
+/* Two-column layout on wide screens: inputs on the left, results on the
+   right. Collapses to a single stacked column on narrow/mobile screens
+   (feature #9: Responsive UI). */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 900px) {
+  .mainGrid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.inputColumn,
+.resultsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

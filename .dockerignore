@@ -1,0 +1,19 @@
+# Python
+backend/venv/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/.env
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Version control / OS / editor cruft
+.git/
+.gitignore
+.DS_Store
+*.log
+
+# Don't accidentally bake the Dockerfile-adjacent dev files into the image
+docker-compose.yml
+README.md

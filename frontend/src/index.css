@@ -1,0 +1,25 @@
+/* Global reset + base styles. Component-specific styles live in their own
+   *.module.css files next to each component (CSS Modules), so class names
+   never leak or clash across components. This file is ONLY for resets and
+   truly global concerns (fonts, background, box-sizing). */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f6f8;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  border: 1px dashed #d7dae0;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.text {
+  font-size: 0.85rem;
+  color: #999;
+  font-style: italic;
+}
+
+.loadingRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loadingText {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.wrapperError {
+  border: 1px solid #f3c2bd;
+  background-color: #fdf1f0;
+}
+
+.errorText {
+  font-size: 0.9rem;
+  color: #b3413a;
+  font-weight: 500;
+}
